@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<title>HTML 基础知识——进阶式案例：用户信息提交表单</title>
+	</head>
+	<body bgcolor = "FFFFFF" text = "000000" background = "12.jpg">
+		<div align = "center"><h1>用 户 信 息 注 册</h1></div>
+		<form Name = "UserInfo" method = "Post" action = "UserLogin.jsp">
+			<table align = "center" width = "500">
+				<tr>
+					<td width = "200" height = "26"> &nbsp;&nbsp;用户名：</td>
+					<td width = "300" height = "26"><input type = "text" name = "username" size = "36"></td>
+				</tr>
+				<tr>
+					<td width = "200" height = "26"> &nbsp;&nbsp;密 &nbsp;&nbsp;码:</td>
+					<td width = "300" height = "26"><input type = "password" name = "userkey1" size = "40" maxlength = "35"></td>
+				</tr>
+				<tr>
+					<td width = "200" height = "26"> &nbsp;&nbsp;确认密码:</td>
+					<td width = "300" height = "26"><input type = "password" name = "userkey2" size = "40" maxlength = "35"></td>
+				</tr>
+				<tr>
+					<td width = "200" height = "26">&nbsp;&nbsp;性 &nbsp;&nbsp别:</td>
+					<td width = "300" height = "26"><input type = "radio" name = "sex" value = "男" checked>男<input type = "radio" name = "sex" value = "女" checked>女</td>
+				</tr>
+				<tr>
+					<td width = "200" height = "26"> &nbsp;&nbsp;教育水平:</td>
+					<td width = "300" height = "26">
+						<select name = "edu">
+							<option value = "博士研究生学历">博士研究生学历</option>
+							<option value = "硕士研究生学历">硕士研究生学历</option>
+							<option value = "工程硕士">工程硕士</option>
+							<option value = "双学位">双学位</option>
+							<option value = "本科">本科</option>
+							<option value = "双专科">双专科</option>
+							<option value = "大专">大专</option>
+							<option value = "中专及以下">中专及以下</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan = 2 width = 400 align = left valign = "top">
+						<fieldset>
+							<legend>爱好</legend>
+								<p>&nbsp;&nbsp;请选择你的爱好：</p>
+								<p><label><input type = "checkbox" name = "favor1" value = "favor1" checked>读书</label>&nbsp;&nbsp;
+								   <label><input type = "checkbox" name = "favor2" value = "favor2">旅游</label>&nbsp;&nbsp;
+								   <label><input type = "checkbox" name = "favor3" value = "favor3">音乐</label>&nbsp;&nbsp;
+								   <label><input type = "checkbox" name = "favor4" value = "favor4">运动</label>&nbsp;&nbsp;
+								   <label><input type = "checkbox" name = "favor5" value = "favor5">旅游</label>&nbsp;&nbsp;</p>
+						</fieldset>
+					</td>
+				</tr>
+				<tr>
+					<td width = "200">&nbsp;&nbsp;自我评价：</td>
+					<td width = "300"><u><textarea name ="word" rows = "5" cols = "40"></textarea></u></td>
+				</tr>
+				<tr>
+					<td colspan = 2 width = 400 align = center valign = top>
+						请上传你的头像图片：<input type = "file" name = "headpic"></td>
+				</tr>
+				<tr>
+					<td width = "100" height = "26">&nbsp;&nbsp;电子邮箱：</td>
+					<td width = "400" height = "26"><u><input type = "text" name = "email" size = "30" maxlength = "50"></u></td>
+				</tr>
+				<tr>
+					<td width = 200 align = rigth>
+						<input type = "submit" name = "image" value = "确定">
+					</td>
+					<td width = 300 align = center valign = middle>
+						<input type = "reset" name = "reset" value = "取消">
+					</td>
+				</tr>
+				<tr>
+					<td colspan = 2 align = center>
+					<p>&nbsp;</p>
+					<p><font size = "2" color = "bule">如果您还不是本网站的会员用户，请在此<a href = "用户信息提交表单.html">注册</a></font></p>
+					</td>
+				</tr>
+			</table>
+		</form>			
+ 	</body>
+<html>
